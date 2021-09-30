@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Practice</title>
+        <style>
+            table,th, td {border:1px solid black;}
+        </style>
+    </head>
+    <body>
+        <!-- Header -->
+        <h1>PRACTICE HEADER</h1>
+
+        <!-- Table -->
+        <h2>Header 2 For Table:</h2>
+        <table>
+            <caption>this is practice</caption>
+            <tr>
+                <th>Column 1</th>
+                <th>Column 2</th>
+                <th><strong>Column 3</strong></th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>a</td>
+                <td>b</td>
+                <td>c</td>
+            </tr>
+        </table>
+
+        <!-- Image w/ link -->
+        <h2>Header 3 for Image w/ Link</h2>
+        <p>my headshot w/ link attached to image</p>
+        <a href="https://linkedin.com">
+            <img src="../images/Headshot 1.jpg" alt="my headshot">
+        </a>
+            
+
+
+        <!-- Paragraph w/ text -->
+        <h2>Header 4 for Paragraph w/ Text</h2>
+        <p>
+            This is a paragraph <br>
+            <strong>bold</strong> on the next line <br>
+            infinity logo character escape &infin;
+        </p>
+
+        <!-- List -->
+        <h2>Header 5 For Lists:</h2>
+        
+        <h4>Ordered List:</h4>
+        <ol>
+            <li>One</li>
+            <li>Two</li>
+            <li>Three</li>
+        </ol>
+
+        <h4>Unordered List:</h4>
+        <ul>
+            <li>Order</li>
+            <li>Doesn't</li>
+            <li>Matter</li>
+        </ul>
+
+        <!-- Form -->
+        <h2>Header 6 For Forms:</h4>
+        <form action="mailto:jclucibe@syr.edu" method="POST">
+            <p><strong>input text</strong></p>
+            <label for="fullname">Enter Full Name:</label>
+            <input type="text" id="fullname" name="fname">
+
+            <br>
+
+            <p><strong>text area</strong></p>
+            <label for="complaint">Enter your complaint:</label>
+            <input type="textarea" id="complaint" name="complaint">
+
+            <p><strong>radio</strong></p>
+            <p>Question: How mad are you?</p>
+            <input type="radio" id="angry1" name="angry" value="very angry">
+            <label for="angry1">Very angry</label>
+            <input type="radio" id="angry2" name="angry" value="kinda angry">
+            <label for="angry2">Kinda angry</label>
+            <input type="radio" id="angry3" name="angry" value="not angry">
+            <label for="angry3">Not angry</label>
+
+            <br>
+
+            <p><strong>select</strong></p>
+            <label for="contactmethod">How would you like to be contacted?</label>
+            <select id="contactmethod" name="contactmethod">
+                <option value="phone">Phone</option>
+                <option value="email">Email</option>
+                <option value="snail mail">Snail Mail</option>
+            </select>
+
+            <br>
+
+            <p><strong>check boxes</strong></p>
+            <label for="contacttime">What times can we contact you?</label> <br>
+            <input type="checkbox" id="contacttime" name="morning" value="morning">
+            <label for="morning">Morning</label> <br>
+            <input type="checkbox" id="contacttime" name="day" value="day">
+            <label for="day">Day</label> <br>
+            <input type="checkbox" id="contacttime" name="afternoon" value="afternoon">
+            <label for="afternoon">Afternoon</label> <br>
+            <input type="checkbox" id="contacttime" name="night" value="night">
+            <label for="Night">Night</label> <br>
+
+            <p><strong>submit</strong></p>
+            <input type="submit" value="Send it in">
+
+        </form>
+
+        <!-- Embedded iframe -->
+        <h2>iframe embedded video</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/A3svABDnmio" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    </body>
+</html>

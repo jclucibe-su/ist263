@@ -1,0 +1,21 @@
+h1 {
+    color:magenta;
+    letter-spacing: 1em;
+}
+p {
+    color:lime;
+    font-weight: bolder;
+}
+body {
+    color: maroon;
+    font-family: Arial, Helvetica, sans-serif;
+}
+    /* The maroon only gets applied to h2 because p and h1 have their own colors */
+h1, h2 {
+    font-size: 400%;
+    /* This is a grouped selector. It will style both headings */
+}
+p a {
+    color: orange;
+    /* Only styling links inside p tag*/
+}

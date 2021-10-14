@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Contact</title>
+        <link rel="stylesheet" href="stylesheet.css">
+    </head>
+    <body>
+        <nav>
+            <a href="index.html">Home</a> | 
+            <a href="skills.html">Skills</a> | 
+            <a href="contact.html">Contact</a>
+        </nav>
+        <h1>Contact</h1>
+        <p>
+            Jacob Lucibello
+        </p>
+        
+        <p>
+            211 Comstock Ave. <br>
+            Syracuse, NY 13244
+        </p>
+
+        <a href="mailto:jclucibe@syr.edu">jclucibe@syr.edu</a> <br>
+
+        <a href="https://www.linkedin.com/in/jacoblucibello/">
+            <img src="../images/logo-sized.png" alt="linkedin logo">
+        </a>
+        <a href="https://www.linkedin.com/in/jacoblucibello/">My LinkedIn Profile</a> <br>
+    
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2915.8548317423088!2d-76.1323493846545!3d43.04448577914691!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d9f30a26b612f1%3A0xae846d33af50d2ad!2s211%20Comstock%20Ave%2C%20Syracuse%2C%20NY%2013210!5e0!3m2!1sen!2sus!4v1631806202046!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <br>
+
+    <!-- Lab 04 Begins Here -->
+    <form action="mailto:jclucibe@sy.edu" method="POST">
+        <label for="fullname">Enter Full Name:</label>
+        <input type="text" id="fullname" name="fname">
+        <br>
+
+        <p>How is your day going?</p>
+        <input type="radio" id="day1" name="bad" value="bad">
+        <label for="day1">Bad</label> <br>
+        
+        <input type="radio" id="day2" name="ok" value="ok">
+        <label for="day2">Ok</label> <br>
+
+        <input type="radio" id="day3" name="good" value="good">
+        <label for="day3">Good</label> <br>
+
+        <label for="day">Describe Your Day:</label> <br>
+                <textarea id="day" name="day">Enter your day here.</textarea> <br>
+
+        <input type="submit" value="Send My Day">
+    </form>
+
+    </body>
+</html>

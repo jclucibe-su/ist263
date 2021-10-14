@@ -1,3 +1,12 @@
+body{
+    background-color: #F6F6F6;
+}
+p{
+    color: #212121;
+}
+a:link{color:#6D9886;}
+
+
 nav{
     background-color: #345B63;
     padding: 10px;

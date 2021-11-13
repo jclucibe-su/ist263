@@ -1,0 +1,33 @@
+body{
+    background-color: #F6F6F6;
+}
+p{
+    color: #212121;
+}
+a:link{color:#6D9886;}
+
+
+nav{
+    background-color: #345B63;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+nav a {color: #6D9886;}
+nav a:hover {background-color: #152D35;}
+
+.part2{display: flex;}
+
+@media only screen and (max-width: 900px) {
+    nav a {width: 100%; display:block; padding: 5px}
+    span {display: none;}
+
+}
+
+#skip {
+    position: absolute; /* relative to parent container */
+    left: -999px; /* move it off the page */
+    background-color: white;
+}
+#skip:focus {
+    left: 10px; /* move out link back on screen */
+}

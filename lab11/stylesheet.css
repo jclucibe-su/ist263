@@ -8,11 +8,11 @@ a:link{color:#6D9886;}
 
 
 nav{
-    background-color: #345B63;
+    background-color: #99b3ff;
     padding: 10px;
     margin-bottom: 30px;
 }
-nav a {color: #6D9886;}
+nav a {color: #000d33;}
 nav a:hover {background-color: #152D35;}
 
 .part2{display: flex;}

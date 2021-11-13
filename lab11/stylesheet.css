@@ -12,8 +12,8 @@ nav{
     padding: 10px;
     margin-bottom: 30px;
 }
-nav a {color: #feffff;}
-nav a:hover {color: #000d33;}
+nav a {color: #000d33;}
+nav a:hover {color: #F6F6F6;}
 
 .part2{display: flex;}
 

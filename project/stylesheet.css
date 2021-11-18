@@ -1,0 +1,43 @@
+h1 {text-align: center;}
+hr {margin-top: 20px; margin-bottom: 20px;}
+
+nav {
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: #FF5910;
+    border-radius: 1em; 
+}
+nav a, span {
+    color: white;
+}
+nav a:hover {
+    color: black;
+}
+
+#skip {
+    position: absolute; /* relative to parent container */
+    left: -999px; /* move it off the page */
+    background-color: #002D72;
+    color: white;
+}
+#skip:focus {
+    left: 10px; /* move out link back on screen */
+}
+
+
+footer {
+    background-color: #FF5910;
+    color: white;
+    padding: 10px;
+    border-radius: 1em; 
+}
+ footer a:hover {
+    color: black;
+ }
+ footer a:visited {
+     color: #002D72;
+ }
+
+
+
+/* #002D72  -  This is blue color code*/

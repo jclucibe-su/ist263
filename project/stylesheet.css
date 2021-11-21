@@ -38,6 +38,11 @@ footer {
      color: #002D72;
  }
 
+ @media only screen and (max-width: 900px) {
+    nav a {width: 100%; display:block; padding: 5px}
+    span {display: none;}
+
+}
 
 
 /* #002D72  -  This is blue color code*/

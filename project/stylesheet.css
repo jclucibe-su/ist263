@@ -31,10 +31,12 @@ footer {
     padding: 10px;
     border-radius: 1em; 
 }
+
+
  footer a:hover {
     color: white;
  }
- footer a:visited {
+ footer a, a:visited {
      color: black;
  }
 

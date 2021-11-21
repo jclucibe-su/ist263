@@ -4,14 +4,14 @@ hr {margin-top: 20px; margin-bottom: 20px;}
 nav {
     padding: 10px;
     margin-bottom: 20px;
-    background-color: #FF5910;
+    background-color: #FF6524;
     border-radius: 1em; 
 }
 nav a, span {
-    color: white;
+    color: black;
 }
 nav a:hover {
-    color: black;
+    color: white;
 }
 
 #skip {
@@ -26,16 +26,16 @@ nav a:hover {
 
 
 footer {
-    background-color: #FF5910;
-    color: white;
+    background-color: #FF6524;
+    color: black;
     padding: 10px;
     border-radius: 1em; 
 }
  footer a:hover {
-    color: black;
+    color: white;
  }
  footer a:visited {
-     color: #002D72;
+     color: black;
  }
 
  @media only screen and (max-width: 900px) {
@@ -45,4 +45,5 @@ footer {
 }
 
 
-/* #002D72  -  This is blue color code*/
+/* #002D72  -  This is blue color code
+#FF5910 - This is the orange color    #FF6524*/

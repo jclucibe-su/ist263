@@ -7,29 +7,43 @@
     <title>Lucibello IST 263 Project - Home</title>
     <link rel="stylesheet" href="stylesheet.css">
     <style>
-        .aboutsection {
-            display: flex;
-            padding: 15px;
-        }
+        #hrtophome {margin-top: 25px;}
+
+        .aboutsection {display: flex;}
+
+        .aboutsection, .aboutquestions {padding: 25px;}
+
         .aboutparagraph {flex: 4; margin-right: 30px;}
-        .aboutimage {flex: 1;padding: 50px;}
+
+        .abouttext, .aboutfranchise, .aboutteamname {line-height: 1.8;}
+
+        .aboutimage {flex: 1.5; padding: 50px;}
+
         .metslogo {width: 100%;}
 
+        .aboutQsTitle {font-size: 1.1em;}
+
         .page1section1, .page1section2, .page1section3, .page1section4 {
-            margin-right: 20px;
-            margin-left: 20px;
+            margin-right: 25px;
+            margin-left: 25px;
             background-color: #002D72;
             border-radius: 1em; 
-            margin-bottom: 10px; 
-            padding: 15px;
+            margin-bottom: 20px; 
+            padding: 25px;
             color: white;
         }
 
-        .stadiumimages {
-            padding: 15px
+        .stadiumimagesparent {
+            padding: 15px;            
         }
 
-        .pologrounds, .sheastadium, .citifield {width: 100%; margin-top: 5px; margin-bottom: 15px;}
+        .pologrounds, .sheastadium, .citifield {width: 100%; margin-top: 5px; margin-bottom: 15px; padding: 10px}
+
+        .stadiumcontainer {display: flex; flex: wrap;}
+        #stadiumtitle {flex: 1; line-height: 1.8em;}
+        #stadiumimg {flex: 4; width: 100%}
+        #fontup {font-size: 1.1em; color: white}
+
 
         .citifield {margin-bottom: auto;}
 
@@ -43,9 +57,11 @@
         .metslogo {width: 50%; margin-right: 25%; margin-left: 25%;}
 
         .championships {width: 100%; display: block; padding: 5px}
-        }
 
-        /* Need to add mobile size view */
+        .mobilebullets {display: none;}
+
+        .timelinecontainer {width: 100%;}
+        }
 
     </style>
 </head>
@@ -59,7 +75,7 @@
         <a href="project_page3.html">Fan Favorite Players</a>
     </nav>
 
-    <hr>
+    <hr id="hrtophome">
 
     <a id="maincontent"></a>
     <h1>New York Mets History</h1>
@@ -68,8 +84,16 @@
         <div class="aboutsection">
             <div class="aboutparagraph">
                 <h2 class="about">About:</h2>
-                <p>
-                    The New York Mets are an American professional baseball team in Major League Baseball’s National League East division. The Mets were one of baseballs first expansion teams in 1962, bring national league baseball back to New York after the Brooklyn Dodgers and New York Giants moved to Los Angeles and San Francisco respectively. <br> <br><strong>**Note: Planning to add a bit more content regarding recent years here because there is too much white space**</strong> 
+                <p class="abouttext">
+                    The New York Mets are an American professional baseball team in Major League Baseball’s National League East division. The Mets were one of baseballs first expansion teams in 1962, bring national league baseball back to New York after the Brooklyn Dodgers and New York Giants moved to Los Angeles and San Francisco respectively. 
+                    <br> 
+                    <br>  
+                    <span id="loremipsum">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        <br> 
+                        <br>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </span>
                 </p>
             </div>
             <div class="aboutimage">
@@ -79,27 +103,30 @@
     
         <br>
     
-        <p><strong><u>How did the Mets become a franchise?</u></strong></p>
-        <ul>
-            <li>
-                After the Brooklyn Dodgers and New York Giants relocated to California, there was a strong interest from fans in having National League baseball back in New York. William Shea, who the team’s stadium from 1964-2008 is named after, was the primary force in bringing baseball back to New York.  
-            </li>
-            <li>
-                With interest from former minority owners of the Giants, and other former owners of New York clubs, the National League and American League decided to expand with two new teams in each league, one of which would be in New York.
-            </li>
-        </ul>
-    
-        <br>
-    
-        <p><strong><u>Why are they called the Mets?</u></strong></p>
-        <ul>
-            <li>
-                When deciding on team names before the league expansions, the New York based team had 10 finalists for possible names. These names included the Avengers, Bees, Burros, Continentals, Jets, Mets, NYBS, Rebels, Skyliners, and Skyscrapers. 
-            </li>
-            <li>
-                The Mets were ultimately decided upon in part because of a different historical baseball team, The New York Metropolitans, who played from 1883 to 1888.
-            </li>
-        </ul>
+        <div class="aboutquestions">
+            <p class="aboutQsTitle"><strong><u>How did the Mets become a franchise?</u></strong></p>
+            <ul class="aboutfranchise">
+                <li>
+                    After the Brooklyn Dodgers and New York Giants relocated to California, there was a strong interest from fans in having National League baseball back in New York. William Shea, who the team’s stadium from 1964-2008 is named after, was the primary force in bringing baseball back to New York.  
+                </li>
+                <li>
+                    With interest from former minority owners of the Giants, and other former owners of New York clubs, the National League and American League decided to expand with two new teams in each league, one of which would be in New York.
+                </li>
+            </ul>
+        
+            <br>
+        
+            <p class="aboutQsTitle"><strong><u>Why are they called the Mets?</u></strong></p>
+            <ul class="aboutteamname">
+                <li>
+                    When deciding on team names before the league expansions, the New York based team had 10 finalists for possible names. These names included the Avengers, Bees, Burros, Continentals, Jets, Mets, NYBS, Rebels, Skyliners, and Skyscrapers. 
+                </li>
+                <li>
+                    The Mets were ultimately decided upon in part because of a different historical baseball team, The New York Metropolitans, who played from 1883 to 1888.
+                </li>
+            </ul>
+        </div>
+        
     </section>
     
     <hr>
@@ -107,36 +134,62 @@
     <section class="page1section2">
         <h2>Homes:</h2>
 
-        <div class="stadiumimages">
-            <u>Polo Grounds:</u> 1962-1963 <br>
-            <img class="pologrounds" src="images/Polo_Grounds.jpg" alt="Polo Grounds"> <br>
+        <div class="stadiumimagesparent">
+            <div class="stadiumcontainer">
+                <div id="stadiumtitle">
+                    <h3><u>Polo Grounds:</u></h3>
+                    <ul>
+                        <li>1962-1963</li>
+                        <li class="mobilebullets"><span id="loremipsum"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi</span></li>
+                        <li class="mobilebullets"><span id="loremipsum"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi</span></li>
+                    </ul>
+                </div>
+                <div id="stadiumimg"><img class="pologrounds" src="images/Polo_Grounds.jpg" alt="Polo Grounds"></div>
 
-            <u>Shea Stadium:</u> 1964-2008 <br>
-            <img class="sheastadium" src="images/Shea_Stadium.jpg" alt="Shea Stadium"> <br>
+            </div>
+              
+            <div class="stadiumcontainer">
+                <div id="stadiumtitle">
+                    <h3><u>Shea Stadium:</u></h3>
+                    <ul>
+                        <li>1964-2008</li>
+                        <li class="mobilebullets"><span id="loremipsum"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi</span></li>
+                        <li class="mobilebullets"><span id="loremipsum"> Lorem ipsum dolor sit amet, consectetur adip</span></li>
+                    </ul>
+                </div>
+                <div id="stadiumimg"><img class="sheastadium" src="images/Shea_Stadium.jpg" alt="Shea Stadium"></div>
+            </div>
+            
+            <div class="stadiumcontainer">
+                <div id="stadiumtitle">
+                    <h3><u>Citi Field:</u></h3>
+                    <ul>
+                        <li>2009-present</li>
+                        <li class="mobilebullets"><span id="loremipsum"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi</span></li>
+                        <li class="mobilebullets"><span id="loremipsum"> Lorem ipsum dolor sit amet, consectetur adip</span></li>
+                    </ul>
+                </div>
+                <div id="stadiumimg"><img class="citifield" src="images/Citi_Field_2.JPG" alt="Citi Field"></div>
+            </div>
 
-            <u>Citi Field:</u> 2009-Present <br>
-            <img class="citifield" src="images/Citi_Field_2.JPG" alt="Citi Field"> <br>
-
-            <br>
         </div>
 
-        <strong>**Note: I still need to resize these images**</strong>
         
     </section>
 
     <hr>
 
-    <section class="page1section3"> <!-- HOW DO YOU MAKE THIS A HORIZONTAL TIMELINE??? -->
+    <section class="page1section3">
         <h2>Owners:</h2>
-        <ul>
-            <li>1962-1975: Joan Whitney Payson</li>
-            <li>1975-1980: Charles Shipman Payson</li>
-            <li>1980-1986: Doubleday & Co.</li>
-            <li>1986-2002: Nelson Doubleday, Jr. & Fred Wilpon</li>
-            <li>2020-Present: Steve Cohen</li>
-        </ul>
-
-        <strong>**Note: I am aiming to turn this into a horizontal timeline for the final draft of the project**</strong>
+        <div class="timelinecontainer">
+            <ul class="timeline">
+                <li data-year="1962 - 1975" data-text="Joan Whitney Payson"></li>
+                <li data-year="1975 - 1980" data-text="Charles Shipman Payson"></li>
+                <li data-year="1980 - 1986" data-text="Doubleday & Co."></li>
+                <li data-year="1986 - 2002" data-text="Nelson Doubleday, Jr. & Fred Wilpon"></li>
+                <li data-year="2020 - Present" data-text="Steve Cohen"></li>
+            </ul>
+        </div> 
     </section>
 
     <hr>

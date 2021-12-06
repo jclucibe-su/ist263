@@ -1,6 +1,8 @@
 #loremipsum {color: red;}
 
-h1 {text-align: center;}
+#hrtophome {margin-top: 25px;}
+
+h1 {text-align: center; padding-bottom: 15px;}
 hr {margin-top: 50px; margin-bottom: 50px;}
 
 nav {
@@ -60,6 +62,8 @@ footer a:visited {
 #FF5910 - This is the orange color    #FF6524*/
 
 
+
+/* CSS For Timeline Below */
 .timeline {
     width: 1000px;
     height: 20px;

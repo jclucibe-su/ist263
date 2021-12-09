@@ -45,9 +45,7 @@ footer {
     padding: 10px;
     border-radius: 1em; 
 }
-footer {
-    color: black;
-}
+
 footer a:visited {
     color: black;
 }

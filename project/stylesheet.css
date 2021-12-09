@@ -2,8 +2,18 @@
 
 #hrtophome {margin-top: 25px;}
 
-h1 {text-align: center; padding-bottom: 15px;}
+h1 {
+    text-align: center; 
+    padding-bottom: 15px;
+    font-family: 'Balsamiq Sans', cursive;
+    font-family: 'Crete Round', serif;
+    font-family: 'Laila', sans-serif;
+}
 hr {margin-top: 50px; margin-bottom: 50px;}
+
+h1 {
+    
+} 
 
 nav {
     padding: 10px;

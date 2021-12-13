@@ -11,7 +11,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital@1&family=Crete+Round&family=Laila:wght@600&display=swap" rel="stylesheet">
     <style>
-
         .aboutsection {display: flex;}
 
         .aboutsection, .aboutquestions {padding: 25px;}
@@ -26,7 +25,7 @@
 
         .aboutQsTitle {font-size: 1.1em;}
 
-        .page1section1, .page1section2, .page1section3, .page1section4 {
+        .page1section1, .page1section2, .page1section3, .page1section4, .timelinesmalldisplay {
             margin-right: 25px;
             margin-left: 25px;
             background-color: #002D72;
@@ -40,11 +39,11 @@
             padding: 15px;            
         }
 
-        .pologrounds, .sheastadium, .citifield {width: 100%; margin-top: 5px; margin-bottom: 15px; padding: 10px}
+        .pologrounds, .sheastadium, .citifield {width: 100%; margin-top: 5px; margin-bottom: 15px; border: 5px solid#FF6524;}
 
         .stadiumcontainer {display: flex; flex: wrap;}
-        .stadiumtitle {flex: 1; line-height: 1.8em;}
-        .stadiumimg {flex: 4; width: 100%}
+        .stadiumtitle {flex: 1; line-height: 1.8em; padding-right: 25px;}
+        .stadiumimg {flex: 4; width: 100%; padding-left: 25px;}
         #fontup {font-size: 1.1em; color: white}
 
 
@@ -52,9 +51,22 @@
 
         .championships {display: flex;}
         .WS1969, .WS1986 {flex: 1; padding: 10px;}
-        .img1969, .img1986 {width: 100%;}
+        .img1969, .img1986 {width: 100%; border: 5px solid#FF6524;}
+
+        .WStext {color: #FFFFFF;}
+
+        .timelinesmalldisplay {display: none;}
+
+
+        @media only screen and (max-width: 1300px) {
+            .page1section3 {display: none;}
+            .timelinesmalldisplay {display: block;}
+            .timelinesmallflex {display: flex; justify-content: space-around;}
+            .timeline2 {line-height: 2em; margin-left: 25px;}
+
+        }
         
-        @media only screen and (max-width: 900px) {
+        @media only screen and (max-width: 1000px) {
         .aboutsection {width: 100%; display:block; padding: 5px}
         .aboutparagraph {width: 100%}
         .metslogo {width: 50%; margin-right: 25%; margin-left: 25%;}
@@ -62,8 +74,6 @@
         .championships {width: 100%; display: block; padding: 5px}
 
         .mobilebullets {display: none;}
-
-        .timelinecontainer {width: 100%;}
         }
 
     </style>
@@ -86,17 +96,9 @@
     <section class="page1section1">
         <div class="aboutsection">
             <div class="aboutparagraph">
-                <h2 class="about">About:</h2>
+                <h2 class="h2">About:</h2>
                 <p class="abouttext">
                     The New York Mets are an American professional baseball team in Major League Baseball’s National League East division. The Mets were one of baseballs first expansion teams in 1962, bring national league baseball back to New York after the Brooklyn Dodgers and New York Giants moved to Los Angeles and San Francisco respectively. 
-                    <br> 
-                    <br>  
-                    <span id="loremipsum">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                        <br> 
-                        <br>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                    </span>
                 </p>
             </div>
             <div class="aboutimage">
@@ -140,11 +142,11 @@
         <div class="stadiumimagesparent">
             <div class="stadiumcontainer">
                 <div class="stadiumtitle">
-                    <h3><u>Polo Grounds:</u></h3>
+                    <h3 class="h3"><u>Polo Grounds:</u></h3>
                     <ul>
                         <li>1962-1963</li>
-                        <li class="mobilebullets"><span id="loremipsum"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi</span></li>
-                        <li class="mobilebullets"><span id="loremipsum"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi</span></li>
+                        <li class="mobilebullets">The Polo Grounds hosted the following sports: baseball, football, college football, soccer, gaelic football, boxing, and motorsports.</li>
+                        <li class="mobilebullets">Fun Fact: The Center Field fence was 483 ft away.</li>
                     </ul>
                 </div>
                 <div class="stadiumimg"><img class="pologrounds" src="images/Polo_Grounds.jpg" alt="Polo Grounds"></div>
@@ -156,8 +158,8 @@
                     <h3><u>Shea Stadium:</u></h3>
                     <ul>
                         <li>1964-2008</li>
-                        <li class="mobilebullets"><span id="loremipsum"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi</span></li>
-                        <li class="mobilebullets"><span id="loremipsum"> Lorem ipsum dolor sit amet, consectetur adip</span></li>
+                        <li class="mobilebullets">Shea installed the iconic Home Run Apple in 1980.</li>
+                        <li class="mobilebullets">Fun Fact: The Beatles opened their 1965 North American tour at Shea Stdium with a record attendance of 55,600.</li>
                     </ul>
                 </div>
                 <div class="stadiumimg"><img class="sheastadium" src="images/Shea_Stadium.jpg" alt="Shea Stadium"></div>
@@ -168,8 +170,8 @@
                     <h3><u>Citi Field:</u></h3>
                     <ul>
                         <li>2009-present</li>
-                        <li class="mobilebullets"><span id="loremipsum"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi</span></li>
-                        <li class="mobilebullets"><span id="loremipsum"> Lorem ipsum dolor sit amet, consectetur adip</span></li>
+                        <li class="mobilebullets">Citi Field's exterior is designed with inspiration from the former home of the Brooklyn Dodgers: Ebbits Field</li>
+                        <li class="mobilebullets">Fun Fact: There is a bridge in deep right center field named after Shea Stadium</li>
                     </ul>
                 </div>
                 <div class="stadiumimg"><img class="citifield" src="images/Citi_Field_2.JPG" alt="Citi Field"></div>
@@ -183,31 +185,54 @@
     <hr>
 
     <section class="page1section3">
-        <h2>Owners:</h2>
+        <h2 class="h2">Owners:</h2>
         <div class="timelinecontainer">
             <ul class="timeline">
                 <li data-year="1962 - 1975" data-text="Joan Whitney Payson"></li>
                 <li data-year="1975 - 1980" data-text="Charles Shipman Payson"></li>
                 <li data-year="1980 - 1986" data-text="Doubleday & Co."></li>
                 <li data-year="1986 - 2002" data-text="Nelson Doubleday, Jr. & Fred Wilpon"></li>
+                <li data-year="2003 - 2020" data-text="Sterling Equities"></li>
                 <li data-year="2020 - Present" data-text="Steve Cohen"></li>
             </ul>
         </div> 
     </section>
 
+    <section class="timelinesmalldisplay">
+        <h2 class="h2">Owners:</h2> <br>
+        <div class="timelinesmallflex">
+            <div class="timelinecontainer2">
+            <ul class="timeline2">
+                <li>1962 - 1975: Joan Whitney Payson</li>
+                <li>1975 - 1980: Charles Shipman Payson</li>
+                <li>1980 - 1986: Doubleday & Co.</li>
+            </ul>
+            </div>
+            <div class="timelinecontainer2">
+                <ul class="timeline2">
+                    <li>1986 - 2002: Nelson Doubleday, Jr. & Fred Wilpon</li>
+                    <li>2002 - 2020: Sterling Equities</li>
+                    <li>2020 - Present: Steve Cohen</li>
+                </ul>
+            </div>
+        </div>
+            
+        
+    </section>
+
     <hr>
         
     <section class="page1section4">
-        <h2>Chapionship Seasons:</h2>
+        <h2 class="h2">Chapionship Seasons:</h2>
 
         <div class="championships">
             <div class="WS1969">
-                1969 World Series Champions <br>
+                <div class="WStext">1969 World Series Champions:</div> <br>
                 <img class="img1969" src="images/1969_Mets.jpg" alt="1969 Mets">
             </div>
 
             <div class="WS1986">
-                1986 World Series Champions <br>
+                <div class="WStext">1986 World Series Champions:</div> <br>
                 <img class="img1986" src="images/1986_Mets.jpg" alt="1986 Mets">
             </div>
         </div>

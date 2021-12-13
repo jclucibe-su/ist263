@@ -41,8 +41,12 @@
         img {width: 100%; border: 5px solid #FF6524;}
         .img {margin-right: 100px; margin-left: 100px;}
 
-        .YT iframe {width: 100%; border: 5px solid#FF6524;}
+        .YT iframe {width: 100%; border: 5px solid#FF6524; height: 600px;}
         .YT {margin-left: 100px; margin-right: 100px; margin-bottom: 75px; margin-top: 75px;}
+
+        @media only screen and (max-width: 650px) {
+            .YT iframe {height: 150px}
+        }
 
         @media only screen and (max-width: 900px) {
             .seavercontainer, .piazzacontainer {padding-left: 25px; padding-right: 25px;}
@@ -52,8 +56,9 @@
 
             .img {margin-right: 0px; margin-left: 0px;}
             .YT {width: 100%; margin-left: 0px};
+            .YT iframe {height: 300px}
         }
-
+     
 
     </style>
 </head>
@@ -168,7 +173,7 @@
             </ul>
 
             <div class="YT">
-                <iframe width="661" height="496" src="https://www.youtube.com/embed/J2wuO3Mdo-w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="661" src="https://www.youtube.com/embed/J2wuO3Mdo-w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
             
         </div>
@@ -266,7 +271,7 @@
             </ul>
 
             <div class="YT">
-                <iframe width="900" height="506" src="https://www.youtube.com/embed/hQhH6yZ8lxw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="900" src="https://www.youtube.com/embed/hQhH6yZ8lxw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </div>
         
